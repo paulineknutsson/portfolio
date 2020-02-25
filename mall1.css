@@ -1,0 +1,370 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html{
+    height: 100%
+  }
+  
+
+
+
+  body{
+    background: #ccc; 
+    font-family: 'Courier New', Courier, monospace;
+
+  }
+
+  .wrapper {
+    background: rgb(249, 249, 249);
+    max-width: 85%;
+
+}
+
+    a:link {
+    color: #000;
+    text-decoration: none;
+    }
+    a:visited {
+    color: #6e6e6e;
+    }
+
+
+
+    header, nav, section, aside, footer, body {
+        padding: 2em;
+        font-family: monospace;
+        box-sizing: border-box;
+        width: 100%;
+        float: left;
+      }
+
+header h1 {
+    font-size: 6vw;
+    display: inline;
+    font-family: 'Encode Sans Condensed', sans-serif;
+    font-weight: lighter; 
+    font-variant: normal;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: black;
+    padding: 0.3em;
+    
+
+}
+
+header img{
+    max-width: 60%;
+}
+header h1 a:hover{
+    text-decoration: none;
+
+}
+
+header h1 a:visited {
+    color: #000
+}
+
+
+nav ul{
+    text-align: center;
+ list-style-type: none;
+ padding: 25px;
+}
+
+
+nav ul li a{
+    float: left;
+    width: 25%;
+    text-align:center;
+
+}
+
+nav ul a:hover{
+    text-decoration: underline;
+}
+main a:hover{
+    text-decoration: underline;
+}
+ 
+.center{
+
+    max-width: 80%;
+    max-height: 80%;
+    margin-left: 10%;
+
+}
+
+.photos{
+    max-width: 100%;
+}
+
+section h2{
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  padding: 1em;
+
+}
+section h3{
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+  padding: 1em;
+
+}
+
+aside h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 1em;
+  }
+  aside a{
+    font-weight: lighter;
+    font-size:16px;
+    margin: 20px;
+    text-align: center;
+  }
+
+  aside img{
+    max-width: 80%;
+    padding:1em;
+    margin-left: 4em;
+
+  }
+section img{
+    max-width: 28%;
+    padding:1em;
+}
+
+main p{
+  font-weight: lighter;
+  font-size:16px;
+  margin: 20px;
+  text-align: center;
+  line-height: 1.5em;
+  
+}
+
+ 
+
+
+footer{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #6e6e6e;
+    font-size: 10px;
+    text-align: right;
+    margin: 50px 0px -10px;
+ }
+
+form, table{
+    text-align: center;
+}
+
+th, td {
+  border-bottom: 2px solid #ddd;
+  padding: 1.5em;
+}
+table {
+  font-size: 18px;
+  margin-left: 3em;
+  text-align: left;
+}
+
+tr:hover {
+  background-color: #5f5f5f;
+
+}
+
+ input[type=text],[type=email]{
+    border: none;
+    border-bottom: 2px solid #494949;
+}
+  
+
+  
+  /* GRID SYSTEM */
+  
+  
+.wrapper{
+    overflow:hidden;
+}
+  
+  .row { 
+    clear: both;
+  }
+  
+
+  @media (max-width: 600px) {
+    .wrapper {
+      width: 100%;
+      min-width: 400px;
+    }
+    
+    
+    .sm-col-1 {
+      width: 25%;
+      min-width: 100px;
+     
+    }
+    
+    .sm-col-2 {
+      width: 50%;
+      min-width: 200px;
+    }
+    
+    .sm-col-3 {
+      width: 75%;
+      min-width: 300px;
+    }
+    
+    .sm-col-4 {
+      width: 100%;
+      min-width: 400px;
+    }
+    
+    
+    .sm-row { 
+      clear: both; 
+    }
+    
+  }
+  
+
+  @media (min-width: 601px) and (max-width: 900px) {
+    
+    .wrapper {
+      overflow:hidden;
+      width: 100%;
+      margin: 0 auto;
+    }
+    
+    .md-col-1 {
+      width: 25%;
+    }
+    
+    .md-col-2 {
+      width: 50%;
+    }
+    
+    .md-col-3 {
+      width: 75%;
+    }
+    
+    .md-col-4 {
+      width: 100%;
+    }
+    
+   
+    
+    .md-row { 
+      clear: both;
+    }
+  }
+  
+  
+
+  @media (min-width: 901px) and (max-width: 1200px) {
+
+    .wrapper {
+      width: 900px;
+      margin: 0 auto;
+    }
+      
+    .lg-col-1 {
+      width: 25%;
+    }
+    
+    .lg-col-2 {
+      width: 50%;
+    }
+    
+    .lg-col-3 {
+      width: 75%;
+    }
+    
+    .lg-col-4 {
+      width: 100%;
+    }
+    
+    
+    .lg-row { 
+      clear: both;
+    }
+  }
+
+  @media (min-width: 1201px){
+
+    .wrapper {
+      width: 1200px;
+      margin: 0 auto;
+    }
+      
+    .xlg-col-1 {
+      width: 25%;
+    }
+    
+    .xlg-col-2 {
+      width: 50%;
+    }
+    
+    .xlg-col-3 {
+      width: 75%;
+    }
+    
+    .xlg-col-4 {
+      width: 100%;
+    }
+    
+    
+    .xlg-row { 
+      clear: both;
+    }
+  }
+  
